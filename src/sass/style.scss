@@ -1,0 +1,95 @@
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #181D23;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+
+    .active{
+        background-color: rgba(255, 255, 255, .2);
+    }
+    .panel{
+        width: 100vw;
+        height: 100vh;
+        border: 1px solid #4b5769;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .panel-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #4b5769;
+        .date-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            height: 140px;
+            .day{
+                font-size: 2rem;
+            }
+            .time{
+                font-size: 4rem;
+                font-weight: bold;
+            }
+            .date{
+                font-size: 1.8rem;
+            }
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 400px;
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-decoration: none;
+                border-radius: 15px;
+                border: 1px solid  #ddd;
+                color: #fff;
+                width: 100%;
+                height: 30%;
+                &:hover{
+                    background-color: transparent;
+                    background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
+                }
+            }
+            i{
+                font-size: 4rem;
+                margin-bottom: 0.4rem;
+            }
+            p{
+                font-size: 1.6rem;
+                text-transform: uppercase;
+            }
+        }
+        .info-box{
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .panel-right{
+        background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+    }
+}
