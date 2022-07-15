@@ -101,6 +101,7 @@ body{
             }
           .boxes{
             display: flex;
+            justify-content: center;
            margin-left: 2rem;
            .one-box{
             width: 20rem;
@@ -121,13 +122,13 @@ body{
            }
         }
         .charts{
-         width: 650px;
+         width: 100%;
          margin: 5px;
          color: #fff;
         }
         }
         .section-down{
-            max-width: 590px;
+           width: 100%;
             margin-left: 2rem;
             h1{
                 margin-left: 2rem;
