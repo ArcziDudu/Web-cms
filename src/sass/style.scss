@@ -10,19 +10,18 @@ html{
 }
 body{
     background-color: #181D23;
-    overflow: hidden;
+ 
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
+    
 
     .active{
         background-color: rgba(255, 255, 255, .2);
     }
     .panel{
         width: 100vw;
-        height: 100vh;
         border: 1px solid #4b5769;
         border-radius: 15px;
         overflow: hidden;
@@ -66,6 +65,7 @@ body{
                 color: #fff;
                 width: 100%;
                 height: 30%;
+                
                 &:hover{
                     background-color: transparent;
                     background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
@@ -91,5 +91,83 @@ body{
     }
     .panel-right{
         background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+        .up-box{
+            display: flex;
+            flex-direction: column;
+            h1{
+              margin-left: 2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+          .boxes{
+            display: flex;
+           margin-left: 2rem;
+           .one-box{
+            width: 20rem;
+            margin: 5px;
+            text-align: center;
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color .1s;
+            &:hover{
+                background-color: rgba(255, 255, 255, .1);
+            }
+            .box-title{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+           }
+        }
+        .charts{
+         width: 650px;
+         margin: 5px;
+         color: #fff;
+        }
+        }
+        .section-down{
+            max-width: 590px;
+            margin-left: 2rem;
+            h1{
+                margin-left: 2rem;
+            }
+            .dropdown-toggle{
+                margin-right: 2rem;
+            }
+            .up{
+                display: flex;
+                justify-content: space-between;
+                .btn{
+                    border: 1px solid #fff;
+                    background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+                    color: #fff;
+                   
+                    &:hover{
+                        background-color: rgba(255, 255, 255, .1);
+                    }
+                }
+            }
+            li{
+                margin-left: 3px;
+                background-color: transparent;
+                .number{
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                }
+            }
+            .bottom-border{
+                border-bottom: 1px solid white;
+               
+            }
+            .btn-toolbar{
+                margin: 5px;
+                .btn{
+                  border: 1px solid #fff;
+                  border-top: none;
+                  border-bottom: none;
+                }
+            }
+        }
     }
 }
